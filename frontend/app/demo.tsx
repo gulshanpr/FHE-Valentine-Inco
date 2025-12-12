@@ -183,7 +183,7 @@ export default function Demo() {
             onClick={() =>
               isConnected
                 ? disconnect()
-                : connect({ connector: config.connectors[0] })
+                : connect({ connector: config.connectors[0] as any })
             }
           >
             {isConnected ? 'Disconnect' : 'Connect'}
